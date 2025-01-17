@@ -25,6 +25,10 @@ library(tidyverse) # Includes dplyr
 data(nhanes_id529, package = 'ID529data')
 
 # SPLIT UP THE DATASET ---------------------------------------------------------
+# For demonstration purposes, we will split the nhanes_id529 dataset into two 
+# individual datasets. We can then use how different types of join functions discussed 
+# in lecture impact the resulting dataaset after the join. 
+
 # Run set.seed(123) to ensure the random sample we take is the same
 set.seed(123)
 
