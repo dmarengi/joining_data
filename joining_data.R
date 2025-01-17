@@ -4,7 +4,7 @@
 # CREATED:  01/13/2023
 # INPUTS:   ID 529 NHANES dataset (ID529data::nhanes_id529) 
 # OUTPUTS:  N/A
-# AUTHOR:   Dean Marengi
+# AUTHOR:   Dean A. Marengi, Jr.
 # NOTES:    ID 529 dataset details: https://github.com/ID529/ID529data
 # ############################################################################ #
 
@@ -43,7 +43,7 @@ clinical <- nhanes_id529 %>%
   slice_sample(., n = 2300) %>% 
   as_tibble()
   
-# Dataset 2: Demographic and clinical parameters (maintain all 2339 observations)
+# Dataset 2: PFAS measures (maintain all 2339 observations)
 pfas <- nhanes_id529 %>% 
   arrange(id) %>% 
   select(id, matches("pf.*")) %>% 
