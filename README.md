@@ -1,12 +1,12 @@
-# Gentle Introduction to Record Linkage Activity 
+# A Gentle Introduction to Record Linkage
 
-**Approach:**
+**Activity:**
 
 -  Clone this github repository
--  Open `joining_data.Rproj` script
--  Read through the comments
-    -  Run existing code and spend some time thinking what it's telling 
+-  Open the R project, `joining_data.Rproj`
+-  Open the R script, `joining_data.R`
+-  Read through the comments included in the R script
+    -  Run existing code
+        -  Spend some time familiarizing yourself with how to implement joins.
     -  Write some new code to explore different types of joins.
- 
-  
  
