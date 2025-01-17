@@ -32,17 +32,9 @@ loveid529_df   # loves ID 529? (has id2_num)
 
 # Simply join id_df to sleep_df by the shared 'id_num' variable
 right_join(x = id_df, y = sleep_df, by = "id_num") |>
+  # THEN join this updated dataset to the coffee dataset, considering the available 
+  # identifiers (e.g., first and last name)
   left_join(x = _, y = coffee_df, by = c("first_name", "last_name" = "LAST")) |> 
+  # THEN join that updated dataset to the the "i<3 id529 dataset by the secondary ID number.
   left_join(x = _, y = loveid529_df, by = c("id2_num" = "id2"))
   
-
-
-
-
-
-
-# Print each dataset
-id_df
-sleep_df
-coffee_df
-
