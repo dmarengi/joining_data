@@ -1,6 +1,6 @@
 # A Gentle Introduction to Record Linkage
 
-## To get strated:
+## To get started:
 
 - Clone this github repository
 - Open `joining_data.Rproj` R project
